@@ -1,5 +1,7 @@
 import Main from "./layout/Main";
 import Landing from "./page/landing";
+import Projects from "./page/projects";
+import Consultation from "./page/consultation";
 
 export default [
     {
@@ -7,15 +9,19 @@ export default [
         element: <Main />,
         children: [
             {
-                name: "Home",
+                name: "Robert Wan",
                 path: "/",
                 element: <Landing />
-                // loader: postsLoader,
-                // children: [
-                // { path: "/create-post", element: <NewPost />, action: newPostAction },
-                // { path: "/:id", element: <PostDetails />, loader: postDetailsLoader },
-                //   { path: "/", element: <Landing /> },
-                // ],
+            },
+            {
+                name: "Projects",
+                path: "/projects",
+                element: <Projects />
+            },
+            {
+                name: "Consultation",
+                path: "/consultation",
+                element: <Consultation />
             }
         ]
     }
