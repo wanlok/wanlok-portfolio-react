@@ -3,11 +3,7 @@ import { Button } from "@mui/material";
 import styles from "./MainMenu.module.css";
 import routes from "../routes";
 
-interface Props {
-    fullWidth: boolean;
-}
-
-export default function ({ fullWidth }: Props) {
+export default function ({ fullWidth }: { fullWidth: boolean }) {
     return (
         <>
             {routes.map((routes, index) => {
